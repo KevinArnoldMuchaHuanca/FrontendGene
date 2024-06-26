@@ -1,0 +1,42 @@
+<p>El número del usuario es: {{ numeroUsuario }}</p>
+<div>
+</div>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <!-- ID Column -->
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> ID </th>
+    <td mat-cell *matCellDef="let element"> {{ element.id }} </td>
+  </ng-container>
+
+
+
+  <!-- Blood Type Column -->
+  <ng-container matColumnDef="blood_type">
+    <th mat-header-cell *matHeaderCellDef> Blood Type </th>
+    <td mat-cell *matCellDef="let element"> {{ element.blood_type }} </td>
+  </ng-container>
+
+  <!-- Registration Date Column -->
+  <ng-container matColumnDef="registration_date">
+    <th mat-header-cell *matHeaderCellDef> Registration Date </th>
+    <td mat-cell *matCellDef="let element"> {{ element.registration_date }} </td>
+  </ng-container>
+
+  <!-- Description Column -->
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef> Description </th>
+    <td mat-cell *matCellDef="let element"> {{ element.description }} </td>
+  </ng-container>
+
+  <!-- Allergies Column -->
+  <ng-container matColumnDef="allergies">
+    <th mat-header-cell *matHeaderCellDef> Allergies </th>
+    <td mat-cell *matCellDef="let element"> {{ element.allergies }} </td>
+  </ng-container>
+
+  <!-- Header and Row Definitions -->
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let element; columns: displayedColumns;"></tr>
+</table>

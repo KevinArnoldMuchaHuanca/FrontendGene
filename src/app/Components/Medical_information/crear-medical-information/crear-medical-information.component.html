@@ -1,0 +1,70 @@
+<h1>Crear Historial Medico</h1>
+
+
+<form [formGroup]="myForm" (ngSubmit)="SaveCustomer()">
+    <mat-card>
+        <mat-card-content>
+    
+            <mat-form-field class="mat-50">
+                <mat-label>Paciente</mat-label>
+                <input matInput formControlName="paciente">
+            </mat-form-field>
+    
+            <mat-form-field class="mat-50">
+                <mat-label>Fecha de registro</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="registro" [matDatepickerFilter]="dateFilter">
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-hint>dd/MM/yyyy</mat-hint>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+    
+            <mat-form-field class="mat-50">
+                <mat-label>Descripcion </mat-label>
+                <input matInput formControlName="Descripcion">
+            </mat-form-field>
+    
+   
+
+            <mat-form-field class="mat-50">
+                <mat-label>Tipo de Sangre</mat-label>
+                <select matNativeControl formControlName="tipo" required>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="AB">AB</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </mat-form-field>
+
+
+            <mat-form-field>
+                <mat-label>Cirugias Previas</mat-label>
+                <!-- <input matInput> -->
+                <textarea matInput formControlName="previous_surgeries"></textarea>
+            </mat-form-field>
+    
+
+            <mat-form-field>
+                <mat-label>Alergias</mat-label>
+                <!-- <input matInput> -->
+                <textarea matInput formControlName="alergias"></textarea>
+            </mat-form-field>
+     
+            <mat-form-field>
+                <mat-label>Vacunas</mat-label>
+                <!-- <input matInput> -->
+                <textarea matInput formControlName="vaccinations"></textarea>
+            </mat-form-field>
+           
+            
+    
+        </mat-card-content>
+        <mat-card-footer>
+        <div style="margin:2%;text-align: right;">
+            <button mat-raised-button type="submit" color="primary" (click)="addMedicalInformation()">Save</button>
+            <button mat-raised-button color="warn" (click)="clearform()">Clear</button>
+        </div>
+        </mat-card-footer>
+    </mat-card>
+    
+    </form>

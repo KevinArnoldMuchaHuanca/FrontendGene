@@ -1,0 +1,545 @@
+.portadaApp{
+    position: relative;
+    max-width: 1600px;
+    height: 1000px;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align:  center;
+}
+.fondo1{
+    max-width: 2000px;
+    background-color: #d7eef8;
+}
+.cels{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*fondo*/
+
+/*.Im{
+    position: absolute;
+    width: 60%;
+    margin-left: 0px;
+    margin-top: -100px;
+}*/
+.portadaApp h2{
+    position: absolute;
+    text-align: center;
+    font-size: 85px;
+    margin-top: 30px;
+    color: rgb(215, 177, 126);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #78acc2;
+    
+}
+
+.cels img{
+    padding-top: 40px;
+}
+.cels{
+    position: absolute;
+    padding-top: 0px;
+}
+.cels2{
+    padding-top: 200px;
+}
+.C{
+    max-width: 100px;
+    width: 100%;
+    padding-top: 150px;
+}
+.ima10{
+    position: relative;
+   width: 150px;
+   margin-top: 60px;
+   margin-bottom: 50px;
+   margin-left: -500px;
+}
+.ima11{
+    width: 20%;
+    margin-left: -20px;
+    position: absolute;
+    margin-top: -190px;
+}
+.ima12{
+    position: absolute;
+    width: 26%;
+    margin-left: 20%;
+    margin-top: -150px;
+}
+.cels3{
+    position: relative;
+    margin-top: 350px;
+
+}
+.decripA{
+    position: absolute;
+    margin-left: -680px;
+    
+    text-align: justify;
+    font-size: 25px;
+    margin-top: 100px;
+    font-family: "Merriweather";
+}
+.decripA .parra{
+    max-width: 300px;
+}
+.decripA h4{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 46px;
+    max-width: 200px;
+    margin-left: 400px;
+    color: rgb(139, 33, 33);
+    text-shadow: 2px 2px 5px rgb(43, 43, 98);
+}
+.senal{
+    position: absolute;
+    width: 15%;
+    margin-left: -260px;
+    margin-top: -350px;
+}
+.qr{
+    position: absolute;
+    width: 18%;
+    margin-left: 0%;
+    margin-top: -55px;
+}
+.conteA{
+    position: absolute;
+    width: 1200px;
+    height: 300px;
+    margin-top: 400px;
+    margin-left: -600px;
+    
+}
+video{
+    width: 400px;
+    border-radius: 25px;
+}
+@media screen and (max-width:1700px) {
+    .portadaApp h2{
+        position: absolute;
+        text-align: center;
+        font-size: 70px;
+        margin-top: 50px;
+    }
+}
+/*maximo-1200*/
+@media screen and (max-width:1318px){
+    .conteA{
+       width: 1100px;
+    }
+}
+
+@media screen and (max-width:1286px){
+    .parra{
+        font-size: 18px;
+        margin-left: 40%;
+    }
+   
+    
+    .ima10{
+        position: relative;
+       width: 180%;
+       margin-left: -450px;
+    }
+    .ima11{
+        width: 30%;
+        margin-left: -220px;
+        position: absolute;
+        margin-top: -70px;
+    }
+    .ima12{
+        position: absolute;
+        width: 28%;
+        margin-left: 20%;
+        margin-top: -200px;
+    }
+   
+    .decripA h4{
+       margin-left: 50%;
+       text-align: center;
+    }
+    .conteA{
+        max-width: 300px;
+        margin-left: 150px;
+    }
+    .senal{
+        margin-top: -60px;
+        width: 50%;
+        margin-left: -50%;
+    }
+    .qr{
+        width: 45%;
+        margin-left: 30%;
+    }
+    
+   
+}
+@media screen and (max-width:1276px){
+    
+    .Im{
+        position: absolute;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: -110px;
+    }
+}
+@media screen and (max-width:1166px){
+
+    .conteA{
+        width: 300px;
+       
+    }
+    .senal{
+        margin-top: -20px;
+        width: 40%;
+        margin-left: -100px;
+    }
+    .qr{
+        width: 45%;
+        margin-left: 50px;
+    }
+    .parra{
+        margin-top: 90px;
+        margin-left: 200px;
+    }
+    .decripA h4{
+        margin-top: 150px;
+        margin-left: 30%;
+        text-align: center;
+        max-width: 300px;
+    }
+    .ima10{
+        position: relative;
+       width: 100%;
+       margin-left: -360px;
+       margin-top: 50px;
+    }
+    .ima11{
+        width: 30%;
+        margin-left: -100px;
+        position: absolute;
+        margin-top: -70px;
+    }
+    .ima12{
+        position: absolute;
+        width: 28%;
+        margin-left: 20%;
+        margin-top: -200px;
+    }
+
+}
+@media screen and (max-width:1157px){
+    .ima10{
+        margin-left: -330px;
+        margin-top:100px ;
+    }
+}
+@media screen and (max-width:1116px){
+    .conteA{
+        margin-left: 10px;
+       
+    }
+}
+@media screen and (max-width:900px){
+
+    .conteA{
+        margin-left: -50px;
+        width: 300px;
+        margin-top: 350px;
+    }
+    .senal{
+        width: 50%;
+        margin-left: -150px;
+        margin-top: 0px;
+    }
+    .qr{
+        width: 50%;
+    }
+    .decripA .parra{
+        max-width: 200px;
+        margin-left: 250px;
+        margin-top: 100px;
+    }
+    .decripA h4{
+        margin-top: 50px;
+        margin-left: 240px;
+        text-align: center;
+        max-width: 300px;
+    }
+   
+}
+@media screen and (max-width:790px){
+
+  .ima10{
+    width: 50%;
+    margin-left: -250px;
+  }
+  .ima11{
+    width: 40%;
+    margin-top: -150px;
+    margin-left: -135px;
+  }
+  .ima12{
+    width: 30%;
+    margin-left: 140px;
+    margin-top: -250px;
+  }
+
+  .portadaApp h2{
+    font-size: 55px;
+  }
+    .qr{
+        width: 50%;
+    }
+    .decripA .parra{
+        max-width: 200px;
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+    .decripA h4{
+        font-size: 30px;
+        margin-top: 150px;
+        margin-left: 340px;
+        text-align: center;
+        max-width: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .Im{
+        margin-top: 0%;
+    }
+   
+}
+
+@media screen and (max-width:724px){
+
+    .ima10{
+      width: 50%;
+      margin-left: -250px;
+    }
+    .ima11{
+      width: 40%;
+      margin-top: -150px;
+      margin-left: -135px;
+    }
+    .ima12{
+      width: 30%;
+      margin-left: 100px;
+      margin-top: -250px;
+    }
+    .conteA{
+        margin-left: -120px;
+    }
+  
+    
+     
+}
+   
+@media screen and (max-width:684px){
+    .portadaApp{
+        padding-bottom: 1100px;
+    }
+    .ima10{
+        margin-top: 400px;
+        margin-left: 30%;
+    }
+    .ima11{
+        margin-left: -220px;
+        width: 250px;
+    }
+    .ima12{
+        margin-left: 5%;
+        margin-top: -250px;
+        width: 250px;
+    }
+    .decripA .parra{
+        margin-top: 200px;
+        margin-left: 420px;
+    }
+    .decripA h4{
+        margin-top: 100px;
+        margin-left: 390px;
+    }
+    .conteA{
+        margin-top: 550px;
+    }
+    .senal{
+        width: 42%;
+        margin-top: -50px;
+        margin-left: -35%;
+
+    }
+    .qr{
+        width: 40%;
+    }
+   
+}
+@media screen and (max-width:578px){
+
+    
+    .ima12{
+      margin-left: 0%;
+    }
+    .conteA{
+        margin-left: -130px;
+    }
+    
+    
+}
+@media screen and (max-width:517px){
+
+    .Im{
+        height: 600px;
+    }
+    .conteA{
+       max-width: 100px;
+       margin-left: -100px;
+       margin-top: 500px;
+    }
+    .senal{
+        margin-left: -80%;
+    }
+    .qr{
+        margin-left: -30%;
+    }
+    .ima10{
+        width: 40%;
+        margin-top: 350px;
+    }
+    .decripA .parra{
+        margin-top: 90px;
+        margin-left: 450px;
+    }
+    .decripA h4{
+        margin-left: 480px;
+    }
+    .ima11{
+        margin-left: -180px;
+        width: 200px;
+    }
+    .ima12{
+        margin-left: 0px;
+        width: 200px;
+    }
+    
+   
+}
+
+@media screen and (max-width:416px){
+
+    .Im{
+        height: 600px;
+    }
+    .conteA{
+       max-width: 200px;
+       margin-top: 500px;
+       margin-left: -200px;
+    }
+    
+    .senal{
+        margin-left: -50%;
+        margin-top: -9px;
+        width:60% ;
+    }
+    .qr{
+        width: 60%;
+        margin-top: 20px;
+        margin-left: 35%;
+    }
+    .ima10{
+        width: 30%;
+        margin-top: 350px;
+        margin-left: 100px;
+    }
+    .decripA .parra{
+        margin-top: 70px;
+        margin-left: 500px;
+        margin-right: 40px;
+        font-size: 16px;
+    }
+    .decripA h4{
+        margin-left: 560px;
+        margin-top: 50px;
+    }
+    .ima11{
+        margin-left: -155px;
+        width: 190px;
+    }
+    .ima12{
+        margin-top: -200px;
+        margin-left: 10px;
+        width: 150px;
+    }
+    
+   
+}
+@media screen and (max-width:341px){
+
+   
+    .conteA{
+       max-width: 100px;
+       margin-left: -170px;
+    }
+    
+    .senal{
+        margin-left: -20%;
+        width: 100%;
+    }
+    .qr{
+        
+        margin-left: 98%;
+        width: 80%;
+    }
+    .portadaApp h2{
+        font-size: 40px;
+      }
+    .ima10{
+        width: 35%;
+        margin-top: 350px;
+        margin-left: 100px;
+    }
+    .decripA .parra{
+        margin-top: 50px;
+        margin-left: 530px;
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    .decripA h4{
+        margin-left: 560px;
+        margin-top: 50px;
+    }
+    .ima11{
+        margin-left: -125px;
+        width: 150px;
+    }
+    .ima12{
+        margin-left: 0px;
+        width: 120px;
+    }
+    
+   
+}
+@media screen and (max-width:270px){
+
+    .ima11{
+        width: 125px;
+        margin-left: -110px;
+        margin-top: -80px;
+    }
+    .ima12{
+      margin-left: -5%;
+    }
+   
+    
+    
+}

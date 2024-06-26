@@ -1,0 +1,129 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "'john_doe'",
+      "password": "'password123'",
+      "enabled": true,
+      "fullname": "'John Doe'",
+      "phone_number": 123456789,
+      "city": "'Example City'",
+      "gender": "'Male'",
+      "speciality": "'Developer'"
+    },
+    {
+      "id": 0,
+      "enabled": true,
+      "username": "daniel",
+      "password": "daniel23",
+      "fullname": "danielsanchez",
+      "phone_number": "123456789",
+      "city": "LimaPeru",
+      "gender": "Masculino",
+      "speciality": "CARDIOLOGO"
+    },
+    {
+      "id": 0,
+      "enabled": true,
+      "username": "danielsdadad",
+      "password": "daniel123",
+      "fullname": "sdsadasd",
+      "phone_number": "asdsadasd",
+      "city": "adadadad",
+      "gender": "adsdasda",
+      "speciality": "dadasdsad"
+    }
+  ],
+  "role": [
+    {
+      "id": 0,
+      "rol": "DOCTOR",
+      "user": {
+        "id": 0,
+        "enabled": true,
+        "username": "daniel",
+        "password": "daniel23",
+        "fullname": "danielsanchez",
+        "phone_number": "123456789",
+        "city": "LimaPeru",
+        "gender": "Masculino",
+        "speciality": "CARDIOLOGO"
+      }
+    },
+    {
+      "id": 0,
+      "rol": "PATIENT",
+      "user": {
+        "id": 0,
+        "enabled": true,
+        "username": "danielsdadad",
+        "password": "daniel123",
+        "fullname": "sdsadasd",
+        "phone_number": "asdsadasd",
+        "city": "adadadad",
+        "gender": "adsdasda",
+        "speciality": "dadasdsad"
+      }
+    },
+    {
+      "id": 0,
+      "rol": "PATIENT",
+      "user": {
+        "id": 0,
+        "enabled": true,
+        "username": "danieldsadad",
+        "password": "daniel123",
+        "fullname": "2123123123",
+        "phone_number": "3312321321",
+        "city": "31313131",
+        "gender": "3131313",
+        "speciality": "131313213"
+      }
+    },
+    {
+      "id": 0,
+      "rol": "DOCTOR",
+      "user": {
+        "id": 0,
+        "enabled": true,
+        "username": "daniel1311",
+        "password": "daniel123sadasd",
+        "fullname": "asdasdasd",
+        "phone_number": "asdsadasd",
+        "city": "asdsadada",
+        "gender": "dasdsdadas",
+        "speciality": "asdasdasd"
+      }
+    },
+    {
+      "id": 0,
+      "rol": "PATIENT",
+      "user": {
+        "id": 0,
+        "enabled": true,
+        "username": "danielads",
+        "password": "dsadadad",
+        "fullname": "sadada",
+        "phone_number": "dsadad",
+        "city": "dadada",
+        "gender": "asddasd",
+        "speciality": "asdadda"
+      }
+    },
+    {
+      "id": 0,
+      "rol": "PATIENT",
+      "user": {
+        "id": 0,
+        "enabled": true,
+        "username": "daniel",
+        "password": "daniel123",
+        "fullname": "saddsa",
+        "phone_number": "asdsadasd",
+        "city": "dsadsaads",
+        "gender": "ddasdass",
+        "speciality": "asddaads"
+      }
+    }
+  ]
+}

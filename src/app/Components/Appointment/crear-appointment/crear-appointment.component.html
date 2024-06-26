@@ -1,0 +1,48 @@
+        <h1>Crear cita</h1>
+
+
+<form [formGroup]="myForm" (ngSubmit)="SaveCustomer()">
+    <mat-card>
+        <mat-card-content>
+    
+            <mat-form-field class="mat-50">
+                <mat-label>Doctor</mat-label>
+                <input formControlName="doctor" matInput>
+            </mat-form-field>
+            <mat-form-field class="mat-50">
+                <mat-label>Razón</mat-label>
+                <input matInput formControlName="razon">
+            </mat-form-field>
+    
+            <mat-form-field class="mat-50">
+                <mat-label>Paciente </mat-label>
+                <input matInput formControlName="paciente">
+            </mat-form-field>
+            
+            <mat-form-field class="mat-50">
+                <mat-label>Hora </mat-label>
+                <input matInput formControlName="hora">
+            </mat-form-field>
+    
+    
+
+            <mat-form-field class="mat-50">
+                <mat-label>Fecha de la cita</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="fecha">
+                <mat-datepicker-toggle matIconSuffix  [for]="picker"></mat-datepicker-toggle>
+                <mat-hint>dd/MM/yyyy</mat-hint>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+    
+            
+    
+        </mat-card-content>
+        <mat-card-footer>
+        <div style="margin:2%;text-align: right;">
+            <button mat-raised-button type="submit" color="primary" (click)="addAppointment()">Save</button>
+            <button mat-raised-button color="warn" (click)="clearform()">Clear</button>
+        </div>
+        </mat-card-footer>
+    </mat-card>
+    
+    </form>

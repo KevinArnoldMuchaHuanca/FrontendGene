@@ -1,0 +1,100 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Register</mat-card-title>
+      </mat-card-header>
+  
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  
+        <mat-card-content>
+          <!-- Username -->
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Username" formControlName="username">
+            <mat-error *ngIf="myForm.get('username')?.hasError('required')">
+              Username is required
+            </mat-error>
+            <mat-error *ngIf="myForm.get('username')?.hasError('minlength')">
+              Username must be at least 3 characters long
+            </mat-error>
+          </mat-form-field>
+  
+          <!-- Password -->
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Password" formControlName="password" type="password">
+            <mat-error *ngIf="myForm.get('password')?.hasError('required')">
+              Password is required
+            </mat-error>
+            <mat-error *ngIf="myForm.get('password')?.hasError('minlength')">
+              Password must be at least 6 characters long
+            </mat-error>
+          </mat-form-field>
+  
+          <!-- Role -->
+          <mat-form-field class="example-full-width">
+            <mat-label>Select Role</mat-label>
+            <mat-select formControlName="role">
+              <mat-option [value]="role" *ngFor="let role of Roles">{{ role }}</mat-option>
+            </mat-select>
+            <mat-error *ngIf="myForm.get('role')?.hasError('required')">
+              Role is required
+            </mat-error>
+          </mat-form-field>
+  
+          <!-- Full Name -->
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Full Name" formControlName="fullname">
+            <mat-error *ngIf="myForm.get('fullname')?.hasError('required')">
+              Full Name is required
+            </mat-error>
+          </mat-form-field>
+  
+          <!-- Phone Number -->
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Phone Number" formControlName="phone_number">
+            <mat-error *ngIf="myForm.get('phone_number')?.hasError('required')">
+              Phone Number is required
+            </mat-error>
+            <mat-error *ngIf="myForm.get('phone_number')?.hasError('minlength')">
+              Phone Number must be at least 6 characters long
+            </mat-error>
+          </mat-form-field>
+  
+          <!-- City -->
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="City" formControlName="city">
+            <mat-error *ngIf="myForm.get('city')?.hasError('required')">
+              City is required
+            </mat-error>
+            <mat-error *ngIf="myForm.get('city')?.hasError('minlength')">
+              City must be at least 6 characters long
+            </mat-error>
+          </mat-form-field>
+  
+          <!-- Gender -->
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Gender" formControlName="gender">
+            <mat-error *ngIf="myForm.get('gender')?.hasError('required')">
+              Gender is required
+            </mat-error>
+            <mat-error *ngIf="myForm.get('gender')?.hasError('minlength')">
+              Gender must be at least 6 characters long
+            </mat-error>
+          </mat-form-field>
+  
+          <!-- Speciality -->
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Speciality" formControlName="speciality">
+            <mat-error *ngIf="myForm.get('speciality')?.hasError('required')">
+              Speciality is required
+            </mat-error>
+            <mat-error *ngIf="myForm.get('speciality')?.hasError('minlength')">
+              Speciality must be at least 6 characters long
+            </mat-error>
+          </mat-form-field>
+        </mat-card-content>
+        <button mat-stroked-button color="accent" class="btn-block" type="button" (click)="addUsuario_y_Rol()" [disabled]="myForm.invalid">Register</button>
+        <button mat-stroked-button color="accent" class="btn-block" type="button" (click)="addRol()" >Register2</button>
+      </form>
+    </mat-card>
+  </div>
+  

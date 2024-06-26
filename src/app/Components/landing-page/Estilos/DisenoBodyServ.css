@@ -1,0 +1,543 @@
+.container__Servicios{
+    max-width: 1600px;
+    padding: 20px;
+    height: 1000px;
+    padding-bottom: 50px;
+    margin: auto;
+    padding-top: 300px;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+.fondo{
+    max-width: 2000px;
+    background-color: #d7eef8;
+}
+.S{
+    position: absolute;
+    text-align: center;
+    font-size: 85px;
+    margin-top: -7.5%;
+    color: rgb(215, 177, 126);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #78acc2;
+    
+}
+.card{
+    width: 400px;
+    position: relative;
+    height: 90px;
+    margin: 20px;
+    margin-top: 170px;
+    transition: all 300ms;
+    font-family:'IBM Plex Serif';
+    background-color: transparent ;
+}
+.card:hover{
+    box-shadow: 1px 1px 20px -10px rgb(80, 79, 79);
+    border-radius: 20px;
+}
+.card:hover .ifo__descrip{
+    margin-top: 0;
+    border-radius: 0px 0px 20px 20px;
+}
+.card:hover .icon{
+    margin-top: -110px;
+    border-radius: 20px 20px 0px 0px;
+}
+.icon {
+    width: 100%;
+    height: 280px;
+    background-color: rgb(251, 247, 234);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius: 20px;
+  
+}
+.ima4, .ima5, .ima6{
+   width: 70%;
+   transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+.ifo__descrip{
+    width: 100%;
+    height: 230px;
+    color: rgb(74, 72, 75);
+    background: rgb(251, 247, 234);
+    padding: 20px;
+    margin-top: -220px;
+    border-radius: 20px;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+
+}
+.ifo__descrip p{
+   font-size: 16px;
+   margin-top: 20px;
+   display: -webkit-box;
+   display: -moz-box;
+   display: box;
+   -webkit-box-orient: vertical;
+   -moz-box-orient: vertical;
+   box-orient: vertical;
+   -webkit-line-clamp: 3;
+   line-clamp: 3;
+   overflow:hidden ;
+
+}
+.ifo__descrip input{
+    margin-top: 20px;
+    padding: 10px 40px;
+    background: rgb(192, 173, 211);
+    color: bisque;
+    font-weight: 500;
+    border:none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px rgb(175, 172, 172) ;
+    transition: box-shadow 300ms;
+}
+
+.ifo__descrip input:hover{
+    box-shadow: 1px 1px 70px -5px rgb(105, 104, 104) ;
+    background-color: rgb(141, 58, 58);
+
+}
+.c1:hover .icon{
+    background-color: rgb(163, 191, 218);
+}
+
+.c2:hover .icon{
+    background-color: rgb(163, 218, 186);
+}
+.c3:hover .icon{
+    background-color: rgb(218, 164, 163);
+}
+
+/*Nosotros*/
+.container_Nosotros{
+    max-width: 1000px;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+    margin: auto;
+    padding-top: 220px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+}
+.N{
+    position: absolute;
+    text-align: center;
+    font-size: 85px;
+    margin-top: -7%;
+    color: rgb(215, 177, 126);
+    text-shadow: 2px 2px 5px #78acc2;
+    
+}
+.item-slide img{
+    width: 100%;
+}
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.pagination{
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(82, 76, 134);
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgb(171, 184, 224);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+.pagination-item:hover{
+    transform: scale(2);
+}
+
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: #fff;
+}
+
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: #fff;
+}
+
+
+@keyframes autoplay{
+    33%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    
+    66%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    
+    100%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+}
+.p1{
+    font-family: "Zen Antique";
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.desctipN{
+    
+    max-width: 995px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/*Servicios resposive*/
+@media screen and (max-width:1700px) {
+   
+    .container_Nosotros{
+       width: 80%;
+    }
+    .N{
+        margin-top: -160px;
+        font-size: 75px;
+    }
+    .desctipN{
+    
+        width: 1995px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .S{
+        position: absolute;
+        text-align: center;
+        font-size: 75px;
+        margin-top: -15%;
+        color: rgb(215, 177, 126);
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 5px #9cb3bd;
+    }
+    .card{
+        width: 300px;
+        position: relative;
+        margin: 20px;
+        margin-top: 50px;
+        transition: all 300ms;
+        font-family:'IBM Plex Serif';
+        background-color: transparent ;
+    }
+    .container__Servicios{
+        padding: 20px;
+        height: 700px;
+        padding-bottom: 50px;
+        margin: auto;
+        padding-top: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+}
+@media screen and (max-width:1420px) {
+   
+    .container__Servicios{
+       
+        margin-top: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    
+    }
+}
+@media screen and (max-width:1377px) {
+   
+    .S{
+        
+        margin-top: -15.5%;
+        
+    }
+    .card{
+        
+        margin-top: 0px;
+    }
+  .container__Servicios .c1:hover{
+    margin-bottom: 190px;
+    
+  }
+  .container__Servicios .c2:hover{
+    margin-bottom: 190px;
+  }
+  .container__Servicios .c3:hover{
+    margin-top: 190px;
+  }
+    
+}
+@media screen and (max-width:1292px) {
+   
+    .container__Servicios{
+        margin-top: 120px;
+    }
+}
+@media screen and (max-width:1270px) {
+   
+    .container__Servicios h2{
+        margin-top: -210px;
+    }
+}
+@media screen and (max-width:936px) {
+   
+    .S{
+        
+        margin-top: -15.5%;
+        
+    }
+    .card{
+        width: 350px;
+        margin-top: 0px;
+    }
+  .container__Servicios .c1:hover{
+    margin-bottom: 190px;
+    
+  }
+  .container__Servicios .c2:hover{
+    margin-bottom: 190px;
+  }
+  .container__Servicios .c3:hover{
+    margin-top: 190px;
+  }
+    
+}
+@media screen and (max-width:836px) {
+   
+    .N{
+        margin-bottom: 20px;
+        font-size: 65px;
+    }
+    .S{
+        font-size: 65px;
+    }
+    .slide{
+        margin-top: 50px;
+    }
+    .container_Nosotros{
+        margin-top: 30px;
+    }
+    .p1{
+        font-size: 14px;
+    }
+    .container__Servicios {
+        height: 1400px;
+        margin-top: 180px;
+    }
+    .container__Servicios .card{
+        margin-bottom: 280px;
+    }
+    .container__Servicios .c1:hover{
+        margin-top: -10px;
+        margin-bottom: 350px;
+        
+    }
+    .container__Servicios .c2:hover{
+        margin-top: 40px;
+        margin-bottom: 350px;
+    }
+    .container__Servicios .c3:hover{
+        margin-top: 40px;
+        margin-bottom: 350px;
+    }
+}
+@media screen and (max-width:779px) {
+   
+    
+    .container__Servicios {
+        padding-bottom: 1100px;
+    }
+  
+    
+}
+@media screen and (max-width:760px) {
+   
+    .container__Servicios{
+        margin-top: 150px;
+    }
+    .S{
+        margin-top: -60px;
+    }
+    
+}
+
+@media screen and (max-width:778.5px) {
+
+    .container__Servicios{
+        padding-top: 900px;
+    }
+    .N{
+        margin-top: -100px;
+        font-size: 60px;
+    }
+
+
+}
+@media screen and (max-width:737px) {
+   
+    .container_Nosotros{
+        margin-top: 0px;
+    }
+    
+}
+@media screen and (max-width:490px) {
+   
+    .container__Servicios{
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width:472px) {
+   
+    .container__Servicios{
+        margin-top: 0px;
+        padding-bottom: 900px;
+    }
+    .container__Servicios .card{
+        height: 50px;
+        width: 300px;
+        margin-bottom: 230px;
+    }
+    .icon{
+        height: 200px;
+    }
+    .S , .N{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width:399px) {
+   
+    .container__Servicios{
+        margin-top: -150px;
+        padding-bottom: 900px;
+    }
+}
+@media screen and (max-width:365px) {
+   
+    .container__Servicios{
+        margin-top: -150px;
+    }
+    
+    .S , .N{
+        margin-top: -60px;
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:365px) {
+   
+    .icon{
+        height: 200px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:301px) {
+   
+    .container__Servicios{
+        margin-top: -150px;
+        
+    }
+    
+    .p1{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:299px) {
+   
+    .container__Servicios{
+        margin-top: -250px;
+        
+    }
+}
+@media screen and (max-width:239px) {
+    .container__Servicios{
+        margin-top: -350px;
+        
+    }
+    .S{
+        margin-top: -60px;
+        font-size: 45px;
+    }
+}

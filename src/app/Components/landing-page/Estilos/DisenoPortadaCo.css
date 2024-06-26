@@ -1,0 +1,843 @@
+.PortadaConta{
+    position: relative;
+    height: 300px;
+    padding: 20px;
+    padding-bottom: 850px;
+    margin: auto;
+    justify-content: center;
+    text-align:  center;
+    background-image: url(".././../../../assets/Images/ima2.png");
+ 
+}
+.PortadaConta h2{
+    position: absolute;
+    margin-top: 30px;
+    font-size: 85px;
+    margin-left: 37%;
+    padding-left: 0px;
+    color: rgb(215, 177, 126);
+    text-shadow: 2px 2px 5px #78acc2;
+}
+
+.cor,.tel{
+    margin-top:0% ;
+    font-size: 30px;
+    margin-bottom: 2%;
+    font-family: "Lobster Two";
+   
+    
+}
+
+.conta{
+    text-align: center;   
+    font-size: 40px;
+    padding-left: 44%;
+    color: rgb(215, 177, 126);
+    text-shadow: 2px 2px 5px #ffffff;
+
+}
+.cuadrosC{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+.correo{
+    
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 0%;
+    width: 18%;
+    height: 260px;
+    background-color: rgb(255, 255, 255);    
+    border: 1px solid rgb(249, 235, 235);
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px rgb(116, 145, 199);
+}
+.telef{
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 310px;
+    width: 18%;
+    height: 260px;
+    background-color: rgb(255, 255, 255);    
+    border: 1px solid rgb(249, 235, 235);
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px rgb(116, 145, 199);
+    justify-content: center;
+    text-align: center;
+
+
+}
+.mensaje{
+    
+    position: relative;
+    margin-left: 45%;
+    margin-top: 8%;
+    width: 40%;
+    height: 570px;
+    background-color: rgb(255, 255, 255);    
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px rgb(116, 145, 199);
+    
+}
+.imacor{
+    margin: 15%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 25%;
+}
+.imatele{
+    position: relative;
+    width: 25%;
+    margin: 35%;
+    margin-top: 10%;
+    margin-bottom: 6%;
+}
+.numero1 {
+   padding: 35%;
+   justify-content:space-between ;
+   
+}
+
+.numero2 {
+
+    position: relative;
+    padding: 35%;
+    margin-top: 10%;
+}
+.titulo{
+    
+    font-size: 36px;
+   text-align: center;
+   margin:0%;
+   background-color: rgb(225, 185, 126);
+   color: rgb(255, 255, 255);
+   border-radius: 8px;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   text-shadow: 2px 2px 5px #ae6161;
+}
+.mensaje input{
+    font-size: 15px;
+    margin-bottom: 2%;
+    font-family: "Lobster Two";
+    padding-right: 400px;
+    border-radius: 6px;
+    height: 25px;
+    margin-left: 0;
+}
+
+.mensaje .cuadrotexto2{
+   
+    padding-top: 10px;
+    padding-bottom: 200px;
+}
+.Men{
+    
+    margin: auto;
+    margin-top: 30px;
+}
+.envi{
+    text-align: center;
+    justify-items: center;
+    justify-items: center;
+    position: absolute;
+    font-size: 170%;
+    margin-top: 32%;
+    margin-left: -320px;
+    font-family: "Martel";
+    border-radius: 8px;
+    background-color: #85d1c0;
+    border: 1px solid white;
+    box-shadow: 0px 0px 4px 0px rgb(25, 56, 112);
+}
+.envi:hover{
+   
+    color: rgb(255, 255, 255);
+    background-color: rgb(219, 174, 160);
+    border-color: #d8cd94;
+    color: rgb(255, 255, 255);
+    transition: 0.8s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.Gene{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding-left: 20%;
+}
+@media screen and (max-width:1700px) {
+    .PortadaConta h2{
+        position: absolute;
+        text-align: center;
+        font-size: 70px;
+        margin-top: 50px;
+    }
+}
+
+/*max-1290*/
+@media screen and (max-width: 1290px) {
+    .PortadaConta{
+        margin-top: -450px;
+    }
+    .telef{
+     margin-top: 28%;
+     height: 25%;
+     justify-items: center;
+     text-align: center;
+     justify-content: center;
+    }
+    .correo{
+     height: 25%;
+     justify-items: center;
+     text-align: center;
+    }
+    .Gene{
+     font-size: 14px;
+     padding-left: 15%;
+    }
+    .mensaje input{
+        font-size: 15px;
+        margin-bottom: 2%;
+        font-family: "Lobster Two";
+        padding-right: 200px;
+        border-radius: 6px;
+        height: 25px;
+        margin-left: 0;
+    }
+    .envi{
+        margin-left: -230px;
+        margin-top: 270px;
+    }
+    
+}
+/*max-1142*/
+@media screen and (max-width: 1670px) {
+    .envi{
+        margin-top: 250px;
+        margin-left: -53%;
+    }
+    .telef , .correo{
+        margin-left: 200px;
+    }
+    .conta .cuadrosC{
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width: 1550px) {
+    .envi{
+        margin-top: 250px;
+        margin-left: -48%;
+    }
+    .mensaje input{
+        font-size: 15px;
+        margin-bottom: 2%;
+        font-family: "Lobster Two";
+        padding-right: 300px;
+        border-radius: 6px;
+        height: 25px;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .correo .Gene{
+        margin-top: 29px;
+        font-size: 90%;
+        margin-left: -3%;
+    }
+}
+
+@media screen and (max-width: 1438px) {
+    .envi{
+        margin-top: 250px;
+        margin-left: -280px;
+    }
+    .mensaje input{
+        font-size: 15px;
+        margin-bottom: 2%;
+        font-family: "Lobster Two";
+        padding-right: 300px;
+        border-radius: 6px;
+        height: 25px;
+        margin-left: 0;
+    }
+    .telef{
+        width: 255px;
+        height: 250px;
+    }
+    .correo{
+        width: 255px;
+        height: 250px;
+    }
+    .cuadrosC{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 1268px) {
+    .envi{
+        margin-top: 250px;
+        margin-left: -235px;
+    }
+    .telef{
+        margin-top: 320px;
+        margin-left: 15%;
+    }
+    .correo{
+        margin-left: 15%;
+    }
+    .mensaje input{
+        font-size: 15px;
+        margin-bottom: 2%;
+        font-family: "Lobster Two";
+        padding-right: 200px;
+        border-radius: 6px;
+        height: 25px;
+        margin-left: 0;
+    }
+    .correo .Gene{
+        margin-left: 0%;
+    }
+    .mensaje{
+        margin-left: 50%;
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width: 1143px) {
+    .PortadaConta{
+        margin-top: -450px;
+    }
+    .PortadaConta h2{
+        position: absolute;
+        color: rgb(215, 177, 126);
+        margin-bottom: 20px;
+        margin-left: 25%;
+        text-shadow: 2px 2px 5px #9cb3bd;
+    }
+    .telef{
+     margin-top: 350px;
+     width: 225px;
+     height: 25%;
+     justify-items: center;
+     text-align: center;
+     justify-content: center;
+    }
+    .correo{
+      
+     height: 25%;
+     justify-items: center;
+     text-align: center;
+    }
+    .Gene{
+     font-size: 12px;
+     padding-left: 15%;
+    }
+    .mensaje input{
+        font-size: 15px;
+        margin-bottom: 2%;
+        font-family: "Lobster Two";
+        padding-right: 200px;
+        border-radius: 6px;
+        height: 25px;
+        margin-left: 0;
+    }
+    .envi{
+        margin-left: -230px;
+        margin-top: 270px;
+    }
+    
+}
+
+@media screen and (max-width: 1043px) {
+    .PortadaConta{
+        margin-top: 80px;
+        
+    }
+    .envi{
+        margin-top: 250px;
+        margin-left: -190px;
+    }
+    .mensaje{
+        height: 540px;
+    }
+    .Men input{
+        padding-right: 30%;
+    }
+   .Gene{
+    margin-top: 30px;
+   }
+   .num1{
+    padding-top: 15px;
+   }
+   .correo{
+    margin-top: 0px;
+    width: 250px;
+    margin-left: 15%;
+   }
+   .telef{
+    width: 250px;
+    margin-top: 320px;
+    margin-left: 15%;
+   }
+    
+}
+@media screen and (max-width: 964px) {
+    .mensaje {
+        margin-left: 55%;
+    }
+    
+}
+/*max-910*/
+@media screen and (max-width: 910px) {
+    .Men input{
+        padding-right: 30%;
+    }
+    .envi{
+        margin-left: -180px;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .mensaje{
+        margin-top: 400px;
+        width: 80%;
+        margin-left: 90px;
+        height: 450px;
+        
+    }.cu{
+        margin-bottom: 50px;
+    }
+    .PortadaConta h2{
+        margin-top: -10px;
+        margin-left: 20%;
+    }
+    
+    .correo{
+        margin-top: -270px;
+    }
+    .Men input{
+        padding-right: 50%;
+    }
+    .telef{
+        margin-top: -270px;
+        margin-left: 55%;
+    }
+    .mensaje .cuadrotexto2{
+   
+        padding-top: 10px;
+        padding-bottom: 130px;
+    }
+    .envi{
+        margin-top: 160px;
+        font-size: medium;
+        margin-left: -250px;
+    }
+    
+}
+@media screen and (max-width: 648px) {
+    .mensaje{
+        margin-top: 400px;
+        width: 80%;
+        margin-left: 70px;
+        height: 450px;
+        
+    }.cu{
+        margin-bottom: 50px;
+    }
+    .PortadaConta h2{
+        margin-left: 20%;
+        font-size: 60px;
+    }
+    .correo{
+        width:200px ;
+        margin-left: 5%;
+        margin-top: -270px;
+    }
+    .Men input{
+        padding-right: 50%;
+    }
+    .telef{
+        width:200px ;
+        margin-top: -270px;
+        margin-left: 55%;
+    }
+    .envi{
+        margin-left: -220px;
+    }
+    .correo .Gene{
+        padding-left: 8px;
+    }
+    
+}@media screen and (max-width: 532px) {
+   
+    .correo{
+        width:200px ;
+        margin-left: 0%;
+        margin-top: -270px;
+    }
+    .Men input{
+        padding-right: 30%;
+    }
+    
+    .telef{
+        width:200px ;
+        margin-top: -270px;
+        margin-left: 49%;
+    }
+    .envi{
+        margin-left: -160px;
+    }
+    
+    
+}
+@media screen and (max-width: 520px) {
+    .mensaje{
+        margin-top: 400px;
+        width: 80%;
+        margin-left: 70px;
+        height: 450px;
+        
+    }.cu{
+        margin-bottom: 50px;
+    }
+    .PortadaConta h2{
+        margin-left: 15%;
+    }
+    .correo{
+        width:200px ;
+        margin-left: 0%;
+        margin-top: -270px;
+    }
+    
+    .telef{
+        width:200px ;
+        margin-top: -270px;
+        margin-left: 49%;
+    }
+    
+    
+}
+@media screen and (max-width: 470px) {
+    .mensaje{
+        margin-top: 400px;
+        width: 80%;
+        margin-left: 45px;
+        height: 450px;
+        
+    }
+    .correo{
+        width:200px ;
+        margin-left: 0%;
+        margin-top: -270px;
+    }
+    
+    .telef{
+        width:200px ;
+        margin-top: -270px;
+        margin-left: 46%;
+    }
+
+    
+    
+    
+}
+@media screen and (max-width: 461px) {
+    .mensaje{
+        margin-top: 400px;
+        width: 80%;
+        margin-left: 70px;
+        height: 450px;
+        
+    }
+    .cu{
+        margin-bottom: 50px;
+    }
+    .PortadaConta h2{
+        font-size: 50px;
+        margin-left:14%;
+    }
+    .correo{
+        width:200px ;
+        margin-left: 25%;
+        margin-top: -470px;
+        height: 190px;
+    }
+    .Men input{
+        padding-right: 25%;
+    }
+    .telef{
+        width:200px ;
+        margin-top: -250px;
+        margin-left: 25%;
+        height: 190px;
+    }
+    .mensaje{
+        margin-top: 550px;
+        margin-left: 10%;
+    }
+    
+    
+}
+@media screen and (max-width: 420px) {
+    .mensaje{
+        margin-top: 400px;
+        width: 80%;
+        margin-left: 50px;
+        height: 450px;
+        
+    }
+}
+@media screen and (max-width:420px) {
+   .mensaje{
+    margin-top: 620px;
+   }
+}
+@media screen and (max-width:400px) {
+    .mensaje{
+     margin-top: 320px;
+    }
+    
+    .correo{
+        width:200px ;
+        margin-left: 19%;
+        margin-top: -470px;
+        height: 190px;
+    }
+    
+    .telef{
+        width:200px ;
+        margin-top: -250px;
+        margin-left: 19%;
+        height: 190px;
+    }
+    .PortadaConta h2{
+        font-size: 50px;
+        margin-left:8%;
+        margin-top: -270px;
+    }
+ }
+@media screen and (max-width: 363px) {
+    .mensaje{
+        margin-top: 400px;
+        width: 80%;
+        margin-left: 10%;
+        height: 450px;
+        
+    }
+    .correo{
+        width:200px ;
+        margin-left: 15%;
+        margin-top: -470px;
+        height: 190px;
+    }
+    .Men input{
+        padding-right: 15%;
+    }
+  
+    .telef{
+        width:200px ;
+        margin-top: -250px;
+        margin-left: 15%;
+        height: 190px;
+    }
+    
+}
+@media screen and (max-width: 349px) {
+    .mensaje{
+        margin-top: 400px;
+        width: 80%;
+        margin-left: 10%;
+        height: 490px;
+        
+    }
+    .correo{
+        width:200px ;
+        margin-left: 10%;
+        margin-top: -470px;
+        height: 190px;
+    }
+    .Men input{
+        padding-right: 15%;
+        
+    }
+    .telef{
+        width:200px ;
+        margin-top: -250px;
+        margin-left: 10%;
+        height: 190px;
+    }
+    
+    .envi{
+        margin-left: -130px;
+        margin-top: 170px;
+    }
+}
+@media screen and (max-width: 350px) {
+    
+    .PortadaConta h2{
+        margin-left: 3%;
+        font-size: 45px;
+        margin-top: -350px;
+    }
+    .cuadrosC{
+        margin-top: -120px;
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    
+    .PortadaConta h2{
+        margin-left: 3%;
+        font-size: 45px;
+        margin-top: -350px;
+    }
+    .cuadrosC{
+        margin-top: -120px;
+    }
+    
+}
+@media screen and (max-width: 318px) {
+    
+    .envi{
+        margin-top: 170px;
+        margin-left: -110px;
+    }
+    
+    .Men input{
+        padding-right: 0%;
+    }
+    
+}
+@media screen and (max-width: 303px) {
+   
+    
+    .envi{
+        margin-left: -110px;
+        margin-top: 200px;
+    }
+    .correo{
+        width:200px ;
+        margin-left: 8%;
+        margin-top: -470px;
+        height: 190px;
+    }
+    .Men input{
+        padding-right: 0%;
+    }
+    .mensaje h5{
+        font-size: 30px;
+    }
+    .telef{
+        width:200px ;
+        margin-top: -250px;
+        margin-left: 8%;
+        height: 190px;
+    }
+   
+    
+}
+@media screen and (max-width: 300px) {
+    
+    
+    .mensaje{
+        margin-top: 320px;
+        width: 100%;
+        margin-left: 0%;
+        height: 450px;
+        
+    }
+    .PortadaConta
+    .correo ,.telef{
+        margin-left: 7%;
+    }
+
+    
+}
+@media screen and (max-width: 296px) {
+    .mensaje{
+        margin-top: 400px;
+        width: 100%;
+        margin-left: 0%;
+        height: 450px;
+        
+    }
+   
+    .envi{
+        margin-left: -110px;
+    }
+    .correo{
+        width:200px ;
+        margin-left: 8%;
+        margin-top: -470px;
+        height: 190px;
+    }
+    .Men input{
+        padding-right: 0%;
+    }
+    .mensaje h5{
+        font-size: 30px;
+    }
+    .telef{
+        width:200px ;
+        margin-top: -250px;
+        margin-left: 8%;
+        height: 190px;
+    }
+}
+@media screen and (max-width: 295px) {
+    .mensaje{
+        margin-top: 330px;
+        width: 100%;
+        margin-left: 0%;
+        height: 450px;
+        
+    }
+    .PortadaConta h2{
+        margin-top: -20px;
+        margin-left: 20px;
+        font-size: 35px;
+    }
+    
+    .envi{
+        margin-left: -110px;
+    }
+    .correo{
+        width:200px ;
+        margin-left: 8%;
+        margin-top: -470px;
+        height: 190px;
+    }
+    .Men input{
+        padding-right: 0%;
+    }
+    .mensaje h5{
+        font-size: 30px;
+    }
+    .telef{
+        width:200px ;
+        margin-top: -250px;
+        margin-left: 8%;
+        height: 190px;
+    }
+    .cuadrosC{
+        margin-top: 550px;
+    }
+    .PortadaConta{
+        margin-bottom: 250px;
+    }
+}
+
+@media screen and (max-width: 241px) {
+    
+    .envi{
+        margin-left: -170px;
+        margin-top: 0px;
+    }
+    
+}

@@ -1,0 +1,27 @@
+
+mat-card{
+    margin: 2%;
+    text-align: left;
+}
+
+.mat-mdc-form-field {
+    width: 98%;
+    margin: 1%;
+}
+
+.mat-50{
+    width: 48%;
+    margin: 1%;
+}
+
+button{
+    margin: 2px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    height: 10vh; /* Ajusta la altura según el viewport si deseas centrar en la pantalla completa */
+    margin: 0; /* Elimina el margen predeterminado */
+  }
